@@ -1,11 +1,15 @@
 .main{
-   border: 1px solid #ccc;
-   border-radius: 50%;
-   display: grid;
-   grid-template-rows: auto;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
 }
-.main-main img{
-    border-radius: 50%;
+.main-main{
+    border-radius: 120px;
     
 }
+
+.main-main img{
+    border-radius: 50%;
+}
+
