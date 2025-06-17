@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +16,6 @@
       font-family: 'Roboto', sans-serif;
       background-color: #fafafa;
       color: #333;
-      background-color: black;
     }
 
     header {
@@ -26,7 +24,6 @@
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
       font-size: 20px;
       font-weight: bold;
-      background-color: black;
     }
 
     .profile-header {
@@ -36,7 +33,7 @@
       gap: 40px;
       background-color: #fff;
       border-bottom: 1px solid #ddd;
-      background-color: black;
+      flex-wrap: wrap;
     }
 
     .profile-image {
@@ -49,23 +46,43 @@
 
     .profile-info {
       flex: 1;
+      min-width: 250px;
     }
-    
+
     .profile-info h2 {
-        font-size: 28px;
+      font-size: 28px;
     }
-    
+
+    .button-group {
+      margin: 15px 0;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .button-group button {
+      padding: 8px 16px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-group button:hover {
+      background-color: #eee;
+    }
+
     .profile-stats {
-        display: flex;
-        gap: 30px;
-        margin: 15px 0;
-        font-size: 16px;
-        color: white;
+      display: flex;
+      gap: 30px;
+      margin: 15px 0;
+      font-size: 16px;
     }
-    
+
     .profile-bio {
-        font-size: 15px;
-        background-color: white;
+      font-size: 15px;
       line-height: 1.5;
     }
 
@@ -94,38 +111,56 @@
         padding: 20px;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       }
+
+      .button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .button-group button {
+        color: white;
+        background-color: black;
+        width: 100%;
+      }
     }
   </style>
 </head>
-<body style="background-color: black;">
+<body>
 
   <header>Instagram</header>
 
   <div class="profile-header">
-    <img src="https://i.pravatar.cc/160?img=3" alt="Profile" class="profile-image">
+    <img src="evo.jpg" alt="Profile" class="profile-image">
     <div class="profile-info">
       <h2>@ian_muthiora</h2>
+
+      
       <div class="profile-stats">
-        <div><strong>120</strong> posts</div>
-        <div><strong>2,500</strong> followers</div>
-        <div><strong>300</strong> following</div>
-      </div>
-      <div class="profile-bio">
-        Tech Explorer | Web Developer 👨‍💻<br>
-        Building cool stuff on the web. Follow for more!
-      </div>
+          <div><strong>120</strong> posts</div>
+          <div><strong>2,500</strong> followers</div>
+          <div><strong>300</strong> following</div>
+        </div>
+        
+        <div class="profile-bio">
+            Tech Explorer | Web Developer 👨‍💻<br>
+            Building cool stuff on the web. Follow for more!
+        </div>
+        <div class="button-group">
+          <button>Follow</button>
+          <button>Message</button>
+          <button>Email</button>
+        </div>
     </div>
   </div>
 
   <div class="photo-grid">
-    <img src="https://source.unsplash.com/random/301x301?tech" alt="Post 1">
-    <img src="https://source.unsplash.com/random/302x301?design" alt="Post 2">
-    <img src="https://source.unsplash.com/random/303x301?city" alt="Post 3">
-    <img src="https://source.unsplash.com/random/304x301?coffee" alt="Post 4">
-    <img src="https://source.unsplash.com/random/305x301?code" alt="Post 5">
-    <img src="https://source.unsplash.com/random/306x301?work" alt="Post 6">
+    <img src="image.instragram.jpg" alt="Post 1">
+    <img src="ryan.jpg" alt="Post 2">
+    <img src="picture.jpg" alt="Post 3">
+    <img src="ian3.jpg" alt="Post 4">
+    <img src="ian4.jpg" alt="Post 5">
+    <img src="ian5.jpg" alt="Post 6">
   </div>
 
 </body>
 </html>
-
