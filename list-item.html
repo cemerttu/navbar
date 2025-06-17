@@ -14,8 +14,8 @@
 
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #fafafa;
-      color: #000000;
+      background-color: #000000;
+      color: #ffffff;
     }
 
     header {
@@ -26,14 +26,15 @@
       font-weight: bold;
     }
 
-    .profile-header {
+    .profile-header,.image-fluid {
       display: flex;
       align-items: center;
       padding: 40px 60px;
       gap: 40px;
-      background-color: #fff;
+      background-color: #000000;
       border-bottom: 1px solid #ddd;
       flex-wrap: wrap;
+
     }
 
     .profile-image {
@@ -47,10 +48,12 @@
     .profile-info {
       flex: 1;
       min-width: 250px;
+      color:  white;
     }
 
     .profile-info h2 {
       font-size: 28px;
+      color: white;
     }
 
     .button-group {
@@ -79,6 +82,7 @@
       gap: 30px;
       margin: 15px 0;
       font-size: 16px;
+      color :white
     }
 
     .profile-bio {
@@ -129,12 +133,11 @@
 
   <header>Instagram</header>
 
-  <div class="profile-header">
+  <div class="profile-header image-fluid">
     <img src="evo.jpg" alt="Profile" class="profile-image">
     <div class="profile-info">
       <h2>@ian_muthiora</h2>
 
-      
       <div class="profile-stats">
           <div><strong>120</strong> posts</div>
           <div><strong>2,500</strong> followers</div>
@@ -160,6 +163,7 @@
     <img src="ian3.jpg" alt="Post 4">
     <img src="ian4.jpg" alt="Post 5">
     <img src="ian5.jpg" alt="Post 6">
+    <img src="" alt="Post 7">
   </div>
 
 </body>
